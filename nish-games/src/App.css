@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+body {
+  background: rgba(148, 187, 233, 1) 100%;
+  color: rgb(46, 46, 170);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content auto;
+  grid-template-areas:
+    "header"
+    "browsing-bar"
+    "content";
+  min-height: 100vh;
+}
+
+.header {
+  background: #d9f1f6;
+  text-align: center;
+  margin: auto;
+  border: 6px solid rgb(46, 46, 170);
+  font-size: x-large;
+}
+
+h2 {
+  text-transform: capitalize;
+  padding: 0;
+}
+.reviews-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  list-style-type: none;
+}
+.reviews {
+  padding: 20px;
+  border: 5px solid rgb(46, 46, 170);
+  margin: 10px 40% 10px 40%;
+  background-color: rgb(195, 232, 245);
+}
+.review-img {
+  width: 170px;
+  height: 150px;
+  margin: 10px;
+}
+h4 {
+  margin: auto;
+  font-size: large;
+}
+
+.login {
+  margin-left: 90%;
+  display: inline;
+  margin-top: 20px;
+}
+.current-user {
+  margin-left: 90%;
+  display: inline;
+  margin-top: 20px;
+  font-size: large;
+}
+.current-user-img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+.users-list {
+  display: inline-block;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+}
+
+.dropbtn {
+  background-color: rgb(195, 232, 245);
+  color: rgb(46, 46, 170);
+  padding: 16px;
+  font-size: 20px;
+  font: bold;
+  border: none;
+}
+
+.dropdown {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  border: 3px solid rgb(46, 46, 170);
+  margin: 20px;
+}
+.dropdown-content {
+  text-transform: capitalize;
+  font-size: large;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(46, 46, 170);
+  color: #d9f1f6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: rgb(46, 46, 170);
+  color: #d9f1f6;
+}
